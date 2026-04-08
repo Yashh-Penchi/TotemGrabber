@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "totemgrabber",
+  "version": "${version}",
+  "name": "TotemGrabber",
+
+  "description": "§l§bTotemGrabber §e§f– Quick and easy offhand management.\n\nWhen your offhand has no totem, opening your inventory auto-focuses a Totem of Undying for instant swapping. If none is found, it falls back to a shield. You can also use **Shift + Left Click** on totem to send a totem directly to your offhand.\n\n\n**Commands:**\n\n* /totemgrabber on – Enable mod\n* /totemgrabber off – Disable mod\n* /totemgrabber toggle – Toggle on/off\n* /totemgrabber status – Show ON/OFF + current delay\n* /totemgrabber delay <ms> – Set delay (50–2000ms, default 50ms)\n\n✔ Auto totem focus\n✔ Shift-click offhand swap\n✔ Shield fallback\n\nStay ready, always.\n By Yashh Penchi",
+
+  "authors": ["Yashh Penchi"],
+  "contact": {
+    "homepage": "https://github.com/Yashh-Penchi",
+    "sources": "https://modrinth.com/organization/yashh-labs"
+  },
+  "license": "CC-BY-NC-ND-4.0",
+  "icon": "assets/totemgrabber/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.penchi.movetotem.MoveTotemClient"]
+  },
+  "mixins": ["movetotem.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
